@@ -1,8 +1,6 @@
 package commonFunctions;
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,7 +8,6 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.Map.Entry;
-import edu.emory.mathcs.backport.java.util.Arrays;
 import commonFunctions.HTMLWriter;
 
 public class CompareCSV {
@@ -19,6 +16,7 @@ public class CompareCSV {
 
 		HashMap<String,String> map1 = new HashMap<String,String>();
 		HashMap<String,String> map2 = new HashMap<String,String>();
+		HashMap<String,String> map3 = new HashMap<String,String>();
 		StringBuilder sb = new StringBuilder();
 		
 		map1 = ReadFile(file1);
@@ -32,6 +30,7 @@ public class CompareCSV {
             	sb.append(entry.getKey().toString()).append('\n');
             	sb.append(entry.getValue().toString()).append('\n');
             }
+            
         }
         
         HTMLWriter.CreateHtml(sb.toString());
