@@ -5,9 +5,11 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.Map.Entry;
+
 import commonFunctions.HTMLWriter;
 
 public class CompareCSV {
@@ -16,21 +18,22 @@ public class CompareCSV {
 
 		HashMap<String,String> map1 = new HashMap<String,String>();
 		HashMap<String,String> map2 = new HashMap<String,String>();
-		HashMap<String,String> map3 = new HashMap<String,String>();
+		ArrayList<String> list = new ArrayList<String>();
 		StringBuilder sb = new StringBuilder();
 		
 		map1 = ReadFile(file1);
 		map2 = ReadFile(file2);
+		
+		Set<Entry<String, String>> entrySet1 = map1.entrySet();
 
-        Set<Entry<String, String>> entrySet1 = map1.entrySet();
-        
         for (Entry<String, String> entry : entrySet1) 
         {
             if(! map2.containsValue(entry.getValue())){
+            	sb.append('\n');
             	sb.append(entry.getKey().toString()).append('\n');
             	sb.append(entry.getValue().toString()).append('\n');
+            	
             }
-            
         }
         
         HTMLWriter.CreateHtml(sb.toString());
@@ -58,7 +61,7 @@ public class CompareCSV {
 		}
 		catch (IOException ioe) {
             ioe.printStackTrace();
-        }
+        }		
 		return map;
 	}
 	}
