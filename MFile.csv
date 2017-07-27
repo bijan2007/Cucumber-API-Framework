@@ -1,0 +1,32 @@
+Type,TypeOfVehicles,VehiclesCategory,TotalRegisteredAsOn31stMarch2012,id,NewlyRegistered201112,timestamp
+Transport,Multiaxled / Articulated Vehicles,I. Multiaxled / Articulated Vehicles,29279,1,2695,2015-12-29 14:16:39
+Transport,Motor cycles on hire,VII. Motor cycles on hire,0,18,0,2015-12-29 14:16:39
+Transport,Total Transport,Total Transport(I to VII),1983759,19,169066,2015-12-29 14:16:39
+Non Transport,Scooters,I. Two wheelers,2353201,20,166875,2015-12-29 14:16:39
+Non Transport,Mopeds,I. Two wheelers,1474900,21,37827,2015-12-29 14:16:39
+Non Transport,Motor cycles,I. Two wheelers,10093662,22,1285018,2015-12-29 14:16:39
+Non Transport,Total Two wheelers,Total-I. Two wheelers,13921763,23,1489720,2015-12-29 14:16:39
+Non Transport,Cars,II. Cars,2307841,24,290880,2015-12-29 14:16:39
+Non Transport,Jeeps,III. Jeeps,423305,25,28917,2015-12-29 14:16:39
+Non Transport,Omni buses,IV. Omni buses,19021,26,60,2015-12-29 14:16:39
+Non Transport,Tractors,V. Tractors,419291,27,48533,2015-12-29 14:16:39
+Non Transport,Trailers,VI. Trailers,324824,28,29511,2015-12-29 14:16:39
+Non Transport,Other vehicles not covered,VII. Other vehicles not covered,32557,29,4539,2015-12-29 14:16:39
+Non Transport,Total Non-Transport,Total Non Transport (I to VII),17448602,30,1892160,2015-12-29 14:16:39
+Transport,Total Light Motor Vehicles (Passengers),Total- VI. Light Motor Vehicles (Passengers),640040,17,28203,2015-12-29 14:16:39
+Transport,Four to six seaters,VI. Light Motor Vehicles (Passengers),NA,16,NA,2015-12-29 14:16:39
+Transport,Three seaters,VI. Light Motor Vehicles (Passengers),NA,15,NA,2015-12-29 14:16:39
+Transport,Trucks & Lorries,II. Trucks & Lorries,382139,2,30778,2015-12-29 14:16:39
+Transport,Four Wheelers,III. Light Motor Vehicles (Goods),341693,3,42786,2015-12-29 14:16:39
+Transport,Three Wheelers,III. Light Motor Vehicles (Goods),314714,4,33964,2015-12-29 14:16:39
+Transport,Total Light Motor Vehicles (Goods),Total-III. Light Motor Vehicles (Goods),656407,5,76750,2015-12-29 14:16:39
+Transport,Stage carriages,IV. Buses,32645,6,2519,2015-12-29 14:16:39
+Transport,Contract carriages,IV. Buses,29663,7,4035,2015-12-29 14:16:39
+Transport,Private service vehicles,IV. Buses,9451,8,667,2015-12-29 14:16:39
+Transport,Other buses,IV. Buses,28338,9,2989,2015-12-29 14:16:39
+Transport,Total Buses,Total-IV. Buses,100097,10,10210,2015-12-29 14:16:39
+Transport,Motor cabs,V. Taxis,NA,11,NA,2015-12-29 14:16:39
+Transport,Maxi cabs,V. Taxis,NA,12,NA,2015-12-29 14:16:39
+Transport,Other taxis,V. Taxis,NA,13,NA,2015-12-29 14:16:39
+Transport,Total Taxis,Total- V. Taxis,175797,14,20430,2015-12-29 14:16:39
+Transport + Non-transport,Grand Total (Transport + Non-Transport),Grand Total (Transport + Non-Transport),19432361,31,2061226,2015-12-29 14:16:39
