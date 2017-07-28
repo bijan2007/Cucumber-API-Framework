@@ -1,16 +1,17 @@
 package stepDefinition;
-import junit.framework.Assert;
+
+import org.junit.Assert;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-
-import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
-
 import static com.jayway.restassured.RestAssured.*;
+import commonFunctions.HTMLWriter;
 import commonFunctions.WriteToCSV;
 import commonFunctions.CompareCSV;
 public class Test_Steps {
+	
+	private String text=null;
 	
 	@Given("^Karnataka API status code is OK$")
 	public Response Karnataka_API_status_code_is_OK() throws Throwable {
@@ -44,7 +45,11 @@ public class Test_Steps {
 	}
 	@Given("^Compare response files$")
 	public void Compare_response_files() throws Throwable {
-		CompareCSV.CompareFiles("KFile.csv", "MFile.csv");
+		text = CompareCSV.CompareFiles("KFile.csv", "MFile.csv");
+	}
+	@Then("^Write results to html file$")
+	public void Write_results_to_html_file() throws Throwable{
+		HTMLWriter.CreateHtml(text);
 	}
 
 }

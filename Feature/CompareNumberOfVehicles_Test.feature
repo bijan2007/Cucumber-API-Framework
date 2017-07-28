@@ -15,3 +15,4 @@ Then Store response from Maharashtra in CSV
 @tag3
 Scenario: User compares API response on Newly Resigtered Motor Vehicles from Karnataka with Maharashtra
 Given Compare response files
+Then Write results to html file

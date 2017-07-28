@@ -13,7 +13,7 @@ public class HTMLWriter {
 		try {
 		    fWriter = new FileWriter("Diff.html");
 		    writer = new BufferedWriter(fWriter);
-		    writer.write("<span><<<--Difference in Data Sets for Vehicles Resistration from Maharashtra and Karnataka-->>></span>");
+		    writer.write("<<<--Difference in Data Sets for Vehicles Registration from Maharashtra and Karnataka-->>>");
 		    writer.write("<span>"+text+"</span>");
 		    writer.newLine();
 		    writer.close(); 

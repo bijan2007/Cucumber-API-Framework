@@ -10,15 +10,12 @@ import java.util.HashMap;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import commonFunctions.HTMLWriter;
-
 public class CompareCSV {
 	
-	public static void CompareFiles(String file1, String file2) throws IOException{
+	public static String CompareFiles(String file1, String file2) throws IOException{
 
 		HashMap<String,String> map1 = new HashMap<String,String>();
 		HashMap<String,String> map2 = new HashMap<String,String>();
-		ArrayList<String> list = new ArrayList<String>();
 		StringBuilder sb = new StringBuilder();
 		
 		map1 = ReadFile(file1);
@@ -36,7 +33,7 @@ public class CompareCSV {
             }
         }
         
-        HTMLWriter.CreateHtml(sb.toString());
+        return sb.toString();
 	
 	}
 	
